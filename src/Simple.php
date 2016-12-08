@@ -13,9 +13,9 @@ class Simple
 	public function divide($divisor)
 	{
 		if (empty($divisor)) {
-			throw new \Exception("Divisor must be a number");
+			throw new \InvalidArgumentException("Divisor must be a number or > 0");
 		}
 
-		return $this->number / $divisor;
+    	return $this->number / $divisor;
 	}
 }
