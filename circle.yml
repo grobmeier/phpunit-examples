@@ -1,3 +1,9 @@
 machine:
   php:
     version: 5.6.17
+dependencies:
+  pre:
+    # Update composer to the latest version
+    - sudo composer selfupdate
+  cache_directories:
+    - "vendor"
