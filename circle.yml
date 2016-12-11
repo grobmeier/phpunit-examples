@@ -7,3 +7,6 @@ dependencies:
     - sudo composer selfupdate
   cache_directories:
     - "vendor"
+test:
+  override:
+    - vendor/bin/phpunit --bootstrap ./tests/bootstrap.php tests
