@@ -5,6 +5,9 @@ dependencies:
   pre:
     # Update composer to the latest version
     - sudo composer selfupdate
+
+    - mysql -u ubuntu -D circle_test < tests/assets/create.sql
+    - mysql -u ubuntu -D circle_test < tests/assets/data.sql
   cache_directories:
     - "vendor"
 test:
