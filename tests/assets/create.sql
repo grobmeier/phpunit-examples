@@ -1,3 +1,5 @@
+CREATE DATABASE IF NOT EXISTS phpunittest;
+
 DROP TABLE IF EXISTS `persons`;
 CREATE TABLE `persons` (
 	`email` varchar(100),
