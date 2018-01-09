@@ -14,3 +14,6 @@ dependencies:
 test:
   override:
     - vendor/bin/phpunit --bootstrap ./tests/bootstrap.php tests
+    
+    
+    # demo buld on github
